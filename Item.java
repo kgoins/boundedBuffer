@@ -1,18 +1,13 @@
 public class Item {
-	private int data;
+	private int id;
 
 	//Constructors
 	public Item() {
-		data = 0;
+		id = 0;
 	}
-	public Item(int data){
-		this.data = data;
+	public Item(int id){
+		this.id = id;
 	}
 
-	public void setData(int input) {data = input;}
-	public int getData() {return data;}
-
-	public String toString() {
-		return "Item data: " + data;
-	}
+	public String toString() {return "Item #" + id;}
 }
