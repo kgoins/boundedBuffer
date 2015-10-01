@@ -1,6 +1,11 @@
 public class Driver {	
 	public static void main(String[] args) {
-		Item item = new Item();
-		System.out.println( item.toString() );
+		BoundedBuffer<Item> bb = new BoundedBuffer<Item>(3);
+
+		Producer p1 = new Producer(3);
+		Consumer c1 = new Consumer(5);
+
+		Producer p2 = new Producer(4);
+		Consumer c2 = new Consumer(4);
 	}
 }
