@@ -1,0 +1,4 @@
+Default / Init constructors
+pass BB to produce / consume
+sub out produce / consume to produce_item / consume item
+looping and MT handeling go in produce / consume
